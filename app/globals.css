@@ -10,6 +10,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-blush: #ffd7d7;
+  --color-vividred: #fd5657;
+  --color-brownie: #d88e38;
+  --color-salmon: #f69292;
+  --color-navyblue: #2d3748;
+  --color-winter: #d9d9d9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +28,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div, li, a {
+  color: var(--color-navyblue);
 }

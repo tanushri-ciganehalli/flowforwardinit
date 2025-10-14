@@ -3,7 +3,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getArticleById } from '../../../data/articles'
 
-export default function ArticlePage({ params }) {
+type ArticlePageProps = {
+  params: {
+    id: string
+  }
+}
+
+export default function ArticlePage({ params }: ArticlePageProps) {
   const article = getArticleById(params.id)
   
   if (!article) {

@@ -35,31 +35,31 @@ export default function NavBar() {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link
                 href="/"
-                className="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                className="text-gray-700 hover:!text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                className="text-gray-700 hover:!text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
                 About
               </Link>
               <Link
                 href="/events"
-                className="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                className="text-gray-700 hover:!text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
                 Events
               </Link>
               <Link
                 href="/get-involved"
-                className="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                className="text-gray-700 hover:!text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
                 Get Involved
               </Link>
               <Link
                 href="/contact"
-                className="bg-vividred text-white hover:bg-transparent hover:text-vividred border-2 border-vividred px-4 py-2 text-sm font-medium transition-colors duration-200"
+                className="bg-vividred !text-white hover:bg-transparent hover:!text-vividred border-2 border-vividred px-4 py-2 text-sm rounded-md font-medium transition-colors duration-200"
               >
                 Contact
               </Link>
@@ -106,35 +106,35 @@ export default function NavBar() {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             href="/"
-            className="text-gray-700 hover:text-pink-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            className="hover:bg-winter block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
             onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-gray-700 hover:text-pink-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            className="hover:bg-winter block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
             onClick={() => setIsOpen(false)}
           >
             About
           </Link>
           <Link
-            href="/programs"
-            className="text-gray-700 hover:text-pink-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            href="/events"
+            className="hover:bg-winter block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
             onClick={() => setIsOpen(false)}
           >
-            Programs
+            Events
           </Link>
           <Link
             href="/get-involved"
-            className="text-gray-700 hover:text-pink-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            className="hover:bg-winter block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
             onClick={() => setIsOpen(false)}
           >
             Get Involved
           </Link>
           <Link
             href="/contact"
-            className="bg-pink-600 text-white hover:bg-pink-700 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 mt-2"
+            className="bg-vividred !text-white hover:bg-salmon block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 mt-2"
             onClick={() => setIsOpen(false)}
           >
             Contact

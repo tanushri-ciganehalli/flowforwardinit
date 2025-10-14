@@ -20,31 +20,31 @@ export default function Home() {
         {/* Content Overlay */}
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 h-[90vh]">
           {/* Left Side - Content */}
-          <div className="px-12 py-16 flex items-center justify-end w-[60vw]">
-            <div className="bg-white p-20 rounded-3xl">
+          <div className="px-6 py-16 flex flex-col items-center justify-center w-full lg:flex-row lg:items-center lg:justify-end lg:w-[60vw]">
+            <div className="bg-white p-8 lg:p-20 rounded-3xl text-center lg:text-left">
               {/* FlowForward Text at Top */}
-              <div className="mb-16">
+              <div className="mb-8 lg:mb-16">
                 <h1 className="text-navyblue text-2xl font-light tracking-widest">
                   FLOW FORWARD INITIATIVE
                 </h1>
               </div>
               
               {/* Main Heading */}
-              <h2 className="text-8xl font-bold text-navyblue mb-8 leading-tight">
+              <h2 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-navyblue mb-6 lg:mb-8 leading-tight">
                 Communities Caring Through Every Cycle.
               </h2>
               
               {/* Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link 
                   href="/about"
-                  className="inline-block border-2 border-vividred !text-vividred px-8 py-3 rounded-lg font-semibold text-lg hover:bg-vividred hover:!text-white transition-all duration-300"
+                  className="inline-block border-2 border-vividred !text-vividred px-6 py-3 rounded-lg font-semibold text-lg hover:bg-vividred hover:!text-white transition-all duration-300"
                 >
                   About Us
                 </Link>
                 <Link 
                   href="/get-involved"
-                  className="inline-block bg-vividred border-2 border-vividred !text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-transparent hover:!text-vividred transition-all duration-300"
+                  className="inline-block bg-vividred border-2 border-vividred !text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-transparent hover:!text-vividred transition-all duration-300"
                 >
                   Get Involved
                 </Link>
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
           
           {/* Right Side - Image shifted left */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center hidden lg:flex">
             <div className="w-1/2 h-1/2 rounded-full overflow-hidden shadow-2xl bg-white">
                 <Image
                   src="/images/flowforward-logo.png" // Replace with your image path
@@ -71,7 +71,7 @@ export default function Home() {
       {/* Mission Statement Section */}
       <div className='bg-salmon p-20'>
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2">
-        <div className=''>
+        <div className='hidden lg:block'>
           <div className="flex items-center justify-center">
             <div className="relative w-auto transform -translate-x-32">
               <Image

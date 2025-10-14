@@ -161,7 +161,7 @@ export default function DonationGuidelines() {
               Questions?
             </h2>
             <p className="text-lg mb-6">
-              If you have questions about donating or aren't sure if your items qualify, please reach out to us:
+              If you have questions about donating or aren&apos;t sure if your items qualify, please reach out to us:
             </p>
             <div className="space-y-2 text-lg">
               <p>Email: <a href="mailto:flowforward101@gmail.com" className="underline hover:text-white/80 transition-colors">flowforward101@gmail.com</a></p>

@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import NavBar from '@/components/NavBar'
 
 export default function AboutPage() {
   return (
@@ -180,9 +178,9 @@ export default function AboutPage() {
               <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Chief Outreach Officer</p>
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Aditi Bambhani</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
-              Hi, My name is Aditi Bhambhani, I'm currently at Amador Valley High. I love to swim, read, walk, listen to music, and color guard!
+              Hi, My name is Aditi Bhambhani, I&apos;m currently at Amador Valley High. I love to swim, read, walk, listen to music, and color guard!
               I joined Flow Forward because I was super passionate about the main idea of this, as women we go through so many struggles especially as we reach puberty.
-              A pad and care should be every woman's right and I wish to deliver so through Flow Forward.
+              A pad and care should be every woman&apos;s right and I wish to deliver so through Flow Forward.
               Currently I am COO of Outreach, meaning I work with other shelters and companies to help us grow bigger!
               </p>
             </div>

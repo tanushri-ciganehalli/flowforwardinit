@@ -16,7 +16,7 @@ export default function ChapterPage() {
               </h1>
               
               <p className="text-xl lg:text-2xl text-black leading-relaxed">
-                Learn how to start a new Flow Forward chapter in your community to empower local leaders to expand Flow Forward's mission and ensure consistency and alignment with our core values!
+                Learn how to start a new Flow Forward chapter in your community to empower local leaders to expand Flow Forward&apos;s mission and ensure consistency and alignment with our core values!
               </p>
             </div>
 

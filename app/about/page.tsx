@@ -155,8 +155,7 @@ export default function AboutPage() {
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Tanushri Ciganehalli</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
               Hi, I&apos;m Tanushri Ciganehalli and I serve as the CTO of Flow Forward Initiative. I manage our website and help the team use technology to share our mission and connect with the community. 
-              I&apos;ve always been interested in healthcare, which inspires me to volunteer and support causes that promote dignity and well-being. At school, I&apos;m active in clubs like HOSA 
-              (I was secretary in 8th grade) where I learned how teamwork and leadership make a difference, I also enjoy math, coding, and learning about design. 
+              I&apos;ve always been interested in healthcare, which inspires me to volunteer and support causes that promote dignity and well-being. I enjoy math, coding, and learning about design. 
               I&apos;m excited to combine my passion for healthcare and technology to help Flow Forward Initiative grow and reach more people.
               </p>
             </div>

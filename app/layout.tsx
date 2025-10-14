@@ -18,7 +18,9 @@ export const metadata: Metadata = {
   title: "Flow Forward Initiative",
   description: "A nonprofit",
   icons: {
-    icon: "/images/flowforward-logo.png", // This will set your favicon
+    icon: "/images/favicon.ico", // This will set your favicon
+    // shortcut: "/images/flowforward-logo.png", // optional
+    // apple: "/images/flowforward-logo.png",
   },
 };
 

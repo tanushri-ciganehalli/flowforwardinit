@@ -1,8 +1,4 @@
-// Database connection file
-// Add your MongoDB connection logic here
-export default function dbConnect() {
-  // Database connection logic goes here
-  import mongoose from 'mongoose'
+import mongoose from 'mongoose'
 
 const MONGODB_URI = process.env.MONGODB_URI!
 
@@ -10,25 +6,34 @@ if (!MONGODB_URI) {
   throw new Error('Please define the MONGODB_URI environment variable')
 }
 
-let cached = global.mongoose
-
-if (!cached) {
-  cached = global.mongoose = { conn: null, promise: null }
+// Define the shape of our cached connection
+interface MongooseCache {
+  conn: typeof mongoose | null
+  promise: Promise<typeof mongoose> | null
 }
 
-async function dbConnect() {
-  if (cached.conn) {
-    return cached.conn
-  }
+// Extend the global object to include our cache
+declare global {
+  // eslint-disable-next-line no-var
+  var mongooseCache: MongooseCache | undefined
+}
+
+// Initialize the cache
+const cached: MongooseCache = global.mongooseCache || {
+  conn: null,
+  promise: null,
+}
+
+if (!global.mongooseCache) {
+  global.mongooseCache = cached
+}
+
+export default async function dbConnect(): Promise<typeof mongoose> {
+  if (cached.conn) return cached.conn
 
   if (!cached.promise) {
-    const opts = {
-      bufferCommands: false,
-    }
-
-    cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
-      return mongoose
-    })
+    const opts = { bufferCommands: false }
+    cached.promise = mongoose.connect(MONGODB_URI, opts)
   }
 
   try {
@@ -39,7 +44,4 @@ async function dbConnect() {
   }
 
   return cached.conn
-}
-
-export default dbConnect
 }

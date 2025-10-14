@@ -86,7 +86,7 @@ ${formData.content}`
         throw new Error('Failed to save article')
       }
     } catch (error) {
-      setMessage('Error saving article: ' + error.message)
+      setMessage('Error saving article: ' + (error as Error).message)
     } finally {
       setIsSubmitting(false)
     }
@@ -136,7 +136,6 @@ ${formData.content}`
                 value={formData.excerpt}
                 onChange={handleInputChange}
                 required
-                rows="2"
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                 placeholder="Brief description of the article"
               />
@@ -151,7 +150,6 @@ ${formData.content}`
                 <select
                   name="category"
                   value={formData.category}
-                  onChange={handleInputChange}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                 >
                   <option value="education">Education</option>
@@ -241,7 +239,6 @@ ${formData.content}`
                 value={formData.content}
                 onChange={handleInputChange}
                 required
-                rows="20"
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent font-mono text-sm"
                 placeholder="Write your article content in Markdown format..."
               />

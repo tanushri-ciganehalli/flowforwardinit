@@ -5,7 +5,6 @@ import emailjs from '@emailjs/browser'
 import { 
   EnvelopeIcon, 
   PhoneIcon, 
-  MapPinIcon,
   PaperAirplaneIcon
 } from '@heroicons/react/24/outline'
 
@@ -21,12 +20,12 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState('idle')
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault()
     setIsSubmitting(true)
     setSubmitStatus('idle')
@@ -73,7 +72,7 @@ export default function ContactPage() {
               Get In Touch
             </h1>
             <p className="text-lg text-bold max-w-2xl mx-auto">
-              We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
             </p>
           </div>
         </div>
@@ -242,7 +241,7 @@ export default function ContactPage() {
                   {/* Status Messages */}
                   {submitStatus === 'success' && (
                     <div className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-                      Thank you! Your message has been sent successfully. We'll get back to you soon.
+                      Thank you! Your message has been sent successfully. We&apos;ll get back to you soon.
                     </div>
                   )}
                   

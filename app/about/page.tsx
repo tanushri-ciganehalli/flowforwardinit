@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
 
 export default function AboutPage() {
   return (
@@ -110,7 +109,7 @@ export default function AboutPage() {
               <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Chief Finance Officer</p>
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Aisha Hanif</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
-              Hi! I’m Aisha Hanif, and I’m the CFO for Flow Forward. I’m a sophomore at Foothill High School, 
+              Hi! I&apos;m Aisha Hanif, and I&apos;m the CFO for Flow Forward. I&apos;m a sophomore at Foothill High School, 
               and I help keep track of our budget and donations. I also get to talk with donors and share why our organization is so important!
               </p>
             </div>
@@ -135,7 +134,7 @@ export default function AboutPage() {
               I joined Flow Forward because I wanted to build a smoother, more reliable way for people to help tackle 
               the period poverty crisis. As our operations lead, I create checklists and event templates, coordinate 
               drives and partnerships, and make sure funds and supplies reach their respective places. 
-              Outside of Flow Forward I’m into neuroscience research, ceramics, and swimming, and our goal for our 
+              Outside of Flow Forward I&apos;m into neuroscience research, ceramics, and swimming, and our goal for our 
               organization is to expand to student-led chapters in multiple cities and increase donations of period care to those in need. 
               </p>
             </div>
@@ -157,10 +156,10 @@ export default function AboutPage() {
               <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Chief Technology Officer</p>
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Tanushri Ciganehalli</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
-              Hi, I’m Tanushri Ciganehalli and I serve as the CTO of Flow Forward Initiative. I manage our website and help the team use technology to share our mission and connect with the community. 
-              I’ve always been interested in healthcare, which inspires me to volunteer and support causes that promote dignity and well-being. At school, I’m active in clubs like HOSA 
+              Hi, I&apos;m Tanushri Ciganehalli and I serve as the CTO of Flow Forward Initiative. I manage our website and help the team use technology to share our mission and connect with the community. 
+              I&apos;ve always been interested in healthcare, which inspires me to volunteer and support causes that promote dignity and well-being. At school, I&apos;m active in clubs like HOSA 
               (I was secretary in 8th grade) where I learned how teamwork and leadership make a difference, I also enjoy math, coding, and learning about design. 
-              I’m excited to combine my passion for healthcare and technology to help Flow Forward Initiative grow and reach more people.
+              I&apos;m excited to combine my passion for healthcare and technology to help Flow Forward Initiative grow and reach more people.
               </p>
             </div>
           </div>

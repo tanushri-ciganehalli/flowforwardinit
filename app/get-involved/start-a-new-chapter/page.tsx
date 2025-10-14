@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Footer from '@/components/Footer'
 
 export default function ChapterPage() {
   return (
@@ -114,7 +113,7 @@ export default function ChapterPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-navyblue mb-2">Eligibility</h3>
                   <p className="text-navyblue">
-                    To start a chapter, you must be at least 16 years old (with an adult advisor if you're under 18)
+                    To start a chapter, you must be at least 16 years old (with an adult advisor if you&apos;re under 18)
                     and assemble a minimum of 5 committed members!
                   </p>
                 </div>
@@ -129,7 +128,7 @@ export default function ChapterPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-navyblue mb-2">Express Your Interst</h3>
                   <p className="text-navyblue">
-                    Complete the Chapter Interest Form and submit a short mission statement describing your chapter's goals
+                    Complete the Chapter Interest Form and submit a short mission statement describing your chapter&apos;s goals
                   </p>
                 </div>
               </div>

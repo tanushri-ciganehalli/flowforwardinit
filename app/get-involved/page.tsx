@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Footer from '@/components/Footer'
+
 
 export default function GetInvolvedPage() {
   return (
@@ -31,7 +31,7 @@ export default function GetInvolvedPage() {
             </h1>
             
             <p className="text-xl lg:text-2xl text-navyblue leading-relaxed">
-              Access to period products isn't a luxury — it's a basic human need. 
+              Access to period products isn&apos;t a luxury — it&apos;s a basic human need. 
               Yet millions of people around the world, including right here in our own communities, struggle to afford or access the supplies they 
               need. See how you can help by getting involved.
             </p>
@@ -85,7 +85,7 @@ export default function GetInvolvedPage() {
       <div className="m-0 text-left pl-8 lg:pl-16">
           <h2 className="text-5xl pb-10 pt-12 font-bold text-navyblue">Start a Flow Forward Initiative Chapter</h2>
           <p className="text-xl lg:text-2xl leading-relaxed pb-30 w-[50vw]">
-          Bring Flow Forward Initiative to your school or community. As a chapter lead, you'll
+          Bring Flow Forward Initiative to your school or community. As a chapter lead, you&apos;ll
           
           organize local drives, run awareness campaigns, and help shape the
           
@@ -123,7 +123,7 @@ export default function GetInvolvedPage() {
 
       <h2 className="text-5xl font-bold pl-8 lg:pl-16 pt-12 pb-4 text-gray-600 leading-relaxed">Host a Product Drive</h2>
       <p className="pb-6 pl-8 lg:pl-16 text-xl lg:text-2xl mx-auto leading-relaxed">
-        Start a local collection of menstrual hygiene products. We'll provide guidance, flyers, and coordination support.
+        Start a local collection of menstrual hygiene products. We&apos;ll provide guidance, flyers, and coordination support.
       </p>
       <div className='pl-8 lg:pl-16 pb-8'><Link 
         href="/get-involved/donation-guidelines"

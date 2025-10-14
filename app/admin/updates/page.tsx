@@ -11,22 +11,22 @@ export default function AdminUpdatePage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [message, setMessage] = useState('')
 
-  const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value, type} = e.target
     setFormData(prev => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value
+      [name]: value,
     }))
   }
 
-  const generateSlug = (title) => {
+  const generateSlug = (title: String) => {
     return title
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/(^-|-$)/g, '')
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
     setMessage('')
@@ -63,20 +63,21 @@ ${formData.content}`
         // Reset form
         setFormData({
           title: '',
-          excerpt: '',
-          category: 'education',
-          author: 'Flow Forward Team',
-          readTime: '',
-          image: '',
-          featured: false,
-          published: true,
+          // excerpt: 'asd',
+          // category: 'education',
+          // author: 'Flow Forward Team',
+          // readTime: '',
+          // image: '',
+          // featured: false,
+          // published: true,
+          date: '',
           content: ''
         })
       } else {
         throw new Error('Failed to save article')
       }
     } catch (error) {
-      setMessage('Error saving article: ' + error.message)
+      setMessage('Error saving article: ' + (error as Error).message)
     } finally {
       setIsSubmitting(false)
     }
@@ -121,7 +122,7 @@ ${formData.content}`
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Excerpt *
               </label>
-              <textarea
+              {/* <textarea
                 name="excerpt"
                 value={formData.excerpt}
                 onChange={handleInputChange}
@@ -129,7 +130,7 @@ ${formData.content}`
                 rows="2"
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                 placeholder="Brief description of the article"
-              />
+              /> */}
             </div>
 
             {/* Category and Author Row */}
@@ -138,30 +139,30 @@ ${formData.content}`
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Category *
                 </label>
-                <select
+                {/* <select
                   name="category"
                   value={formData.category}
                   onChange={handleInputChange}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
-                >
-                  <option value="education">Education</option>
+                > */}
+                  {/* <option value="education">Education</option>
                   <option value="updates">Updates</option>
                   <option value="events">Events</option>
-                </select>
+                </select> */}
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Author *
                 </label>
-                <input
+                {/* <input
                   type="text"
                   name="author"
                   value={formData.author}
                   onChange={handleInputChange}
                   required
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
-                />
+                /> */}
               </div>
             </div>
 
@@ -171,52 +172,52 @@ ${formData.content}`
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Read Time
                 </label>
-                <input
+                {/* <input
                   type="text"
                   name="readTime"
                   value={formData.readTime}
                   onChange={handleInputChange}
                   placeholder="e.g., 5 min read"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
-                />
+                /> */}
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Image URL
                 </label>
-                <input
+                {/* <input
                   type="text"
                   name="image"
                   value={formData.image}
                   onChange={handleInputChange}
                   placeholder="/images/article-image.jpg"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
-                />
+                /> */}
               </div>
             </div>
 
             {/* Checkboxes */}
             <div className="flex space-x-6">
               <label className="flex items-center">
-                <input
+                {/* <input
                   type="checkbox"
                   name="featured"
                   checked={formData.featured}
                   onChange={handleInputChange}
                   className="mr-2 h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
-                />
+                /> */}
                 Featured Article
               </label>
 
               <label className="flex items-center">
-                <input
+                {/* <input
                   type="checkbox"
                   name="published"
                   checked={formData.published}
                   onChange={handleInputChange}
                   className="mr-2 h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
-                />
+                /> */}
                 Published
               </label>
             </div>
@@ -231,7 +232,6 @@ ${formData.content}`
                 value={formData.content}
                 onChange={handleInputChange}
                 required
-                rows="20"
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent font-mono text-sm"
                 placeholder="Write your article content in Markdown format..."
               />

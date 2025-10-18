@@ -63,7 +63,7 @@ export default function AboutPage() {
       {/* <div className='bg-vividred pb-1'></div> */}
 
       {/* CHIEF OFFICERS */}
-      <div className='grid place-items-center'>
+      <div className='grid place-items-center p-8'>
         
         <div><h2 className="text-6xl font-bold tracking-wider pt-12 pb-4 leading-tight text-center">Our Team</h2></div>
 

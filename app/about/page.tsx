@@ -49,7 +49,8 @@ export default function AboutPage() {
     </h1>
     <div className="">
       <p className=' text-center text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed'> 
-      To advance menstrual equity and support individuals who lack consistent access to essential feminine hygiene products. 
+      To advance menstrual equity and support individuals who lack consistent access to essential feminine hygiene products, and to raise awareness about menstraul equity
+      art-based educational tools.
       Our work is grounded in community care and driven by a commitment to raising awareness about period poverty.
       </p>
     </div>
@@ -70,10 +71,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl pb-15">
             <div className="relative h-80 w-80 overflow-hidden border-3 border-salmon">
               <Image
-                src="/images/leyla-pic.jpeg" 
+                src="/images/leyla-pic2.jpeg" 
                 alt="Door shaped image"
-                width={1036}
-                height={775}
+                width={774}
+                height={774}
                 className="w-full h-full object-fit"
                 priority
               />
@@ -94,10 +95,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl pb-15">
             <div className="relative h-80 w-80 overflow-hidden border-3 border-salmon">
               <Image
-                src="/images/aisha-pic.jpg" // Replace with your image path
+                src="/images/aisha-pic2.jpg" // Replace with your image path
                 alt="Door shaped image"
-                width={512}
-                height={683}
+                width={409}
+                height={409}
                 className="w-full h-full object-fit"
                 priority
               />
@@ -188,10 +189,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl pb-15">
             <div className="relative h-80 w-80 overflow-hidden border-3 border-salmon">
               <Image
-                src="/images/aahana-pic.png" // Replace with your image path
+                src="/images/aahana-pic2.png" // Replace with your image path
                 alt="Door shaped image"
-                width={406}
-                height={508}
+                width={850}
+                height={850}
                 className="w-full h-full object-fit"
                 priority
               />

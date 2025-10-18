@@ -58,6 +58,12 @@ export default function NavBar() {
                 Get Involved
               </Link>
               <Link
+                href="/raising-awareness"
+                className="text-gray-700 hover:!text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+              >
+                Learn
+              </Link>
+              <Link
                 href="/contact"
                 className="bg-vividred !text-white hover:bg-transparent hover:!text-vividred border-2 border-vividred px-4 py-2 text-sm rounded-md font-medium transition-colors duration-200"
               >
@@ -131,6 +137,13 @@ export default function NavBar() {
             onClick={() => setIsOpen(false)}
           >
             Get Involved
+          </Link>
+          <Link
+            href="/raising-awareness"
+            className="hover:bg-winter block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            onClick={() => setIsOpen(false)}
+          >
+            Learn
           </Link>
           <Link
             href="/contact"

@@ -89,9 +89,11 @@ export default function Home() {
         {/* TEXT */}
         <div>
             <p className='text-xl lg:text-2xl leading-relaxed'>
-            Our mission is to advance menstrual equity and support individuals who lack consistent access to essential feminine hygiene products. Through community-based drives, mutual aid partnerships, student-led chapters, and international collaborations, we collect and distribute period products directly to unhoused and low-income women.
+            Our mission is to advance menstrual equity and support individuals who lack consistent access to essential feminine hygiene products. 
+            Through community-based drives, mutual aid partnerships, student-led chapters, and international collaborations, we collect and distribute period products directly to unhoused and low-income women.
             <br></br><br></br>
-            While youth-founded, Flow Forward Initiative operates independently of school systems to maintain flexibility and a broader community reach. Our work is grounded in community care and driven by a commitment to raising awareness about period poverty.
+            While youth-founded, Flow Forward Initiative operates independently of school systems to maintain flexibility and a broader community reach. Our work is grounded in community care and driven by a commitment to raising awareness about period poverty. Along with
+            providing support, we work to spread awareness for menstraul equity through art-based educational tools.
             <br></br><br></br>
             We believe period products are a basic human need and not a privilege. No one should have to choose between dignity and survival. By spotlighting this urgent issue, we aim to break stigmas, mobilize resources, and leave a lasting impact.
             </p>

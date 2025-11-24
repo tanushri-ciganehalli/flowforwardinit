@@ -16,8 +16,8 @@ export default function GetInvolvedPage() {
         <div className="flex-1 relative">
           {/* Semicircle-rectangle shape behind text - responsive */}
           <div className="absolute -left-8 sm:-left-16 md:-left-24 lg:-left-32 top-1/2 -translate-y-1/2 
-                          w-[60vw] sm:w-[70vw] md:w-[60vw] lg:w-[50vw] xl:w-[65vw]
-                          h-[30vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] xl:h-[60vh]
+                          md:w-[1000px] lg:w-[950px] xl:w-[1700px]
+                          md:h-[600px] lg:h-[650px] xl:h-[700px]
                           bg-salmon"
                style={{
                  borderRadius: '0 min(25vw, 500px) min(25vw, 500px) 0'
@@ -25,12 +25,15 @@ export default function GetInvolvedPage() {
           
           {/* Text content - UPDATED to use full width */}
           <div className="relative z-20 pl-4 sm:pl-8 lg:pl-16 pr-4 sm:pr-8 lg:pr-16 max-w-5xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 sm:mb-6 lg:mb-8 font-bold text-navyblue leading-tight">
+            <h1 className="text-6xl md:text-left lg:text-left text-center text-5xl md:text-6xl lg:text-7xl xl:hidden mb-4 lg:mb-8 font-bold text-navyblue leading-tight">
+              Get
+              Involved
+            </h1>
+            <h1 className="hidden xl:flex text-6xl xl:text-8xl mb-4 xl:mb-8 font-bold text-navyblue leading-tight">
               Get<br />
               Involved
             </h1>
-            
-            <p className="text-xl lg:text-2xl text-navyblue leading-relaxed">
+            <p className="text-xl text-center md:text-left lg:text-left xl:text-left lg:text-2xl text-navyblue leading-relaxed">
               Access to period products isn&apos;t a luxury — it&apos;s a basic human need. 
               Yet millions of people around the world, including right here in our own communities, struggle to afford or access the supplies they 
               need. See how you can help by getting involved.
@@ -40,7 +43,7 @@ export default function GetInvolvedPage() {
         
         {/* Right side - Image circle */}
         <div className="hidden lg:flex flex-1 justify-center lg:justify-end">
-          <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[70vh] xl:h-[70vh]">
+          <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-full md:h-80 lg:w-96 lg:h-96 xl:w-[70vh] xl:h-[70vh]">
             {/* Circular image container */}
             <div className="w-full h-full rounded-full overflow-hidden shadow-2xl">
               <Image
@@ -79,12 +82,12 @@ export default function GetInvolvedPage() {
     
     <div className='bg-vividred py-6'></div>
     {/* START A CHAPTER SECTION */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 bg-blush">
+    <div className="grid grid-cols-1 lg:grid-cols-3 items-center bg-gradient-to-r from-salmon to-blush lg:mask-r-from-80%">
       
-      <div className="container mx-auto bg-salmon mask-r-from-80% w-[90vw] pb-14">
-      <div className="m-0 text-left pl-8 lg:pl-16">
-          <h2 className="text-5xl pb-10 pt-12 font-bold text-navyblue">Start a Flow Forward Initiative Chapter</h2>
-          <p className="text-xl lg:text-2xl leading-relaxed pb-30 w-[50vw]">
+      <div className="h-full w-full col-span-2 flex flex-col justify-center">
+      <div className="">
+          <h2 className="text-4xl font-bold text-center p-8">Start a Flow Forward Initiative Chapter</h2>
+          <p className="text-xl lg:text-2xl leading-relaxed text-center p-8 pt-2">
           Bring Flow Forward Initiative to your school or community. As a chapter lead, you&apos;ll
           
           organize local drives, run awareness campaigns, and help shape the
@@ -92,7 +95,7 @@ export default function GetInvolvedPage() {
           movement where you are.
           </p>
         </div>
-        <div className='pl-8 lg:pl-16'>
+        <div className='p-8 pt-1 flex justify-center'>
           <Link 
             href="/get-involved/start-a-new-chapter"
             className="inline-block bg-vividred border-2 border-vividred text-blush px-8 py-2 rounded-lg font-semibold text-lg hover:bg-transparent hover:text-vividred transition-all duration-300"
@@ -101,7 +104,7 @@ export default function GetInvolvedPage() {
           </Link>
         </div> 
       </div>
-      <div className="hidden lg:flex flex-1 justify-center lg:justify-end pr-8 pt-8">
+      <div className="hidden lg:flex flex-1 justify-center md:justify-end lg:justify-center p-8">
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
             {/* Circular image container */}
             <div className="w-full h-full rounded-full overflow-hidden shadow-2xl bg-white">
@@ -121,13 +124,13 @@ export default function GetInvolvedPage() {
     <div className='bg-vividred pb-1'></div>            
     <div className='bg-blush'>
 
-      <h2 className="text-5xl font-bold pl-8 lg:pl-16 pt-12 pb-4 text-gray-600 leading-relaxed">Host a Product Drive</h2>
-      <p className="pb-6 pl-8 lg:pl-16 text-xl lg:text-2xl mx-auto leading-relaxed">
+      <h2 className="text-4xl font-bold p-8 pb-2 text-gray-600 leading-relaxed text-center">Host a Product Drive</h2>
+      <p className="p-8 text-xl lg:text-2xl mx-auto leading-relaxed text-center">
         Start a local collection of menstrual hygiene products. We&apos;ll provide guidance, flyers, and coordination support.
       </p>
-      <div className='pl-8 lg:pl-16 pb-8'><Link 
+      <div className=' justify-self-center pb-8'><Link 
         href="/get-involved/donation-guidelines"
-        className="inline-block border-2 border-vividred text-vividred px-8 py-2 rounded-lg font-semibold text-lg hover:bg-vividred hover:text-blush transition-all duration-300"
+        className=" inline-block border-2 border-vividred text-vividred px-8 py-2 rounded-lg font-semibold text-lg hover:bg-vividred hover:text-blush transition-all duration-300"
       >
         Donation Guidelines
       </Link></div>
@@ -135,10 +138,10 @@ export default function GetInvolvedPage() {
 
       {/* Donation categories header and section */}
       <div className='bg-winter'>
-        <h2 className="text-4xl font-light text-center tracking-wider pl-8 lg:pl-16 text-gray-500 leading-relaxed">Donation Categories</h2>  
+        <h2 className="text-3xl font-light text-center tracking-wider pl-8 pb-2 lg:pl-16 text-gray-500 leading-relaxed">Donation Categories</h2>  
       </div>     
       {/* Three pictures*/}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-8 place-items-center py-14">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-8 pt-4 place-items-center py-14">
         <div className='w-90'>
           <div className="relative h-110 overflow-hidden border-2 border-salmon"
               style={{
@@ -208,15 +211,15 @@ export default function GetInvolvedPage() {
       </div>
     </div>
 
-    <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center min-w-screen">
       {/* Waht we collect*/}
-      <div className='bg-[#e49198] h-full w-full place-items-center'>
+      <div className='bg-[#e49198] w-full h-full'>
         <div className='bg-winter'>
-          <h2 className="text-4xl font-light text-center tracking-wider w-[50vw] pt-2 pb-2 text-gray-500 leading-relaxed">What We Collect</h2>  
+          <h2 className="text-4xl font-light w-full text-center tracking-wider pt-2 pb-2 text-gray-500 leading-relaxed">What We Collect</h2>  
         </div> 
         <div>
         {/* bg-vividred inline-block text-blush px-8 py-2 text-lg font-light tracking-wider */}
-          <ul className='list-none space-y-2 p-8'>
+          <ul className='list-none space-y-2 p-8 place-items-center'>
             <li className=''>
               <p className='bg-salmon inline-block border-1 border-white text-white text-center p-2 w-100 py-2 text-lg font-light tracking-wider'>Pads (all sizes)</p>
             </li>
@@ -244,19 +247,19 @@ export default function GetInvolvedPage() {
       {/* Where it goes */}
       <div className='bg-[#e6b1bd] h-full w-full'>
         <div className='bg-winter'>
-          <h2 className="text-4xl font-light text-center tracking-wider w-[50vw] pt-2 pb-2 text-gray-500 leading-relaxed">Where It Goes</h2>  
+          <h2 className="text-4xl font-light text-center tracking-wider pt-2 pb-2 text-gray-500 leading-relaxed">Where It Goes</h2>  
         </div>
 
         <div className="m-0 pt-6 text-gray-600 p-8">
           <h2 className="text-2xl leading-relaxed text-center">Donations go directly to:</h2>
-          <ul className='space-y-2 pb-8 pr-8 pl-25 pt-4 list-disc'>
+          <ul className='space-y-2 justify-self-center pt-4 list-disc'>
             <li><p className="text-xl leading-relaxed tracking-wider font-light ">Local women and family shelters</p></li>
             <li><p className="text-xl leading-relaxed tracking-wider font-light ">Community outreach programs</p></li>
             <li><p className="text-xl leading-relaxed tracking-wider font-light ">Students and low-income individuals through mutual aid groups</p></li>
           </ul>
         </div>
         
-        <p className="text-xl leading-relaxed tracking-wider text-center font-bold p-8 align-baseline">We focus on direct distribution to ensure items get where they are most needed–fast</p>
+        <p className="text-xl leading-relaxed tracking-wider text-center font-bold pl-6 pr-6 pb-4  align-baseline">We focus on direct distribution to ensure items get where they are most needed–fast</p>
       </div>
     </div>
 

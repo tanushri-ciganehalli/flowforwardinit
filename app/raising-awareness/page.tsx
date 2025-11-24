@@ -76,28 +76,14 @@ export default function AwarenessPage() {
         </div>
       </div>
 
-        <div className='hidden lg:flex'>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 bg-[#ffe4e6]">
+
+            <div className='bg-blush'>
+            <div className="bg-salmon">
         
-                <div className="justify-self-center p-8">
-                    <div className="relative md:w-64 md:h-84 lg:w-80 lg:h-100 xl:w-100 xl:h-120">
-                        {/* Circular image container */}
-                        <div className="w-full h-full ">
-                        <Image
-                            src="/images/comic-ex.png" // Replace with your image path
-                            alt="Get Involved"
-                            width={512}
-                            height={703}
-                            className="w-full h-full object-fill rounded-2xl border-salmon border-2 bg-white p-2"
-                            priority
-                        />
-                        </div>
-                    </div>
-                </div>
                 <div className="m-0 col-span-1 xl:col-span-3 md:col-span-2 lg:col-span-2 text-left flex items-center p-8">
                     <div className=''>
-                    <h2 className="text-4xl text-center lg:text-5xl lg:text-left font-bold pb-8">Educational Tools</h2>
-                    <p className="text-xl text-center lg:text-left lg:text-2xl leading-relaxed">
+                    <h2 className="text-4xl text-center lg:text-5xl font-bold pb-8">Educational Tools</h2>
+                    <p className="text-xl text-center lg:pr-30 lg:pl-30 lg:text-2xl leading-relaxed">
                     Our art-based educational tools include creative comics, illustrations, 
                     and relatable messages to provide people with a way to connect and engage with menstrual equity.
 
@@ -107,41 +93,37 @@ export default function AwarenessPage() {
                     </div>
                 </div>
                 
-            </div>
-
-            <div className='md:hidden bg-blush'>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 bg-salmon">
-        
-                <div className="m-0 col-span-1 xl:col-span-3 md:col-span-2 lg:col-span-2 text-left flex items-center p-8">
-                    <div className=''>
-                    <h2 className="text-4xl text-center lg:text-5xl lg:text-left font-bold pb-8">Educational Tools</h2>
-                    <p className="text-xl text-center lg:text-left lg:text-2xl leading-relaxed">
-                    Our art-based educational tools include creative comics, illustrations, 
-                    and relatable messages to provide people with a way to connect and engage with menstrual equity.
-
-                    We are currently in the process of creating various short comics to bring more people to contribute to our cause.
-                    </p>
-                    </div>
-                    </div>
-                </div>
-                
-
-                <div className="justify-self-center p-8">
-                    <div className="relative md:w-64 md:h-84 lg:w-80 lg:h-100 xl:w-100 xl:h-120">
-                        {/* Circular image container */}
-                        <div className="w-full h-full ">
-                        <Image
-                            src="/images/comic-ex.png" // Replace with your image path
-                            alt="Get Involved"
-                            width={512}
-                            height={703}
-                            className="w-full h-full object-fill rounded-2xl border-salmon border-2 bg-white p-2"
-                            priority
-                        />
-                        </div>
-                    </div>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-6 gap-y-6 place-items-center'>
+    
+                      <div className="relative sm:w-100 sm:h-120 md:w-64 md:h-84 lg:w-80 lg:h-100 xl:w-140 xl:h-180">
+                          {/* Circular image container */}
+                          <div className="w-full h-full ">
+                          <Image
+                              src="/images/comic-ex.png" // Replace with your image path
+                              alt="Get Involved"
+                              width={512}
+                              height={703}
+                              className="w-full h-full object-fill rounded-2xl border-salmon border-2 bg-white p-2"
+                              priority
+                          />
+                          </div>
+                      </div>
+                      <div className="relative sm:w-100 sm:h-120 md:w-64 md:h-84 lg:w-80 lg:h-100 xl:w-140 xl:h-180">
+                          {/* Circular image container */}
+                          <div className="w-full h-full ">
+                          <Image
+                              src="/images/comic2.jpg" // Replace with your image path
+                              alt="Get Involved"
+                              width={607}
+                              height={939}
+                              className="w-full h-full object-fill rounded-2xl border-salmon border-2 bg-white p-2"
+                              priority
+                          />
+                          </div>
+                      </div>
                 </div>
             </div>
+            
         </div>
         
     

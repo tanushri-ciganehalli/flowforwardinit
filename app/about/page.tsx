@@ -81,7 +81,7 @@ export default function AboutPage() {
             </div>
 
             <div className=''>
-              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Chief Executive Officer</p>
+              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Executive Officer</p>
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Leyla Merrifield</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
               I am the CEO/Founder. I lead the vision and direction of FFI, guide my team, make key deductions, and represent our organization publicly to inspire support and impact.
@@ -105,7 +105,7 @@ export default function AboutPage() {
             </div>
 
             <div className=''>
-              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Chief Finance Officer</p>
+              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Finance Officer</p>
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Aisha Hanif</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
               Hi! I&apos;m Aisha Hanif, and I&apos;m the CFO for Flow Forward. I&apos;m a sophomore at Foothill High School, 
@@ -127,7 +127,7 @@ export default function AboutPage() {
             </div>
 
             <div className=''>
-              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Chief Operations Officer</p>
+              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Operations Officer</p>
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Ananya Menon</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
               I joined Flow Forward because I wanted to build a smoother, more reliable way for people to help tackle 
@@ -152,7 +152,7 @@ export default function AboutPage() {
             </div>
 
             <div className=''>
-              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Chief Technology Officer</p>
+              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Technology Officer</p>
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Tanushri Ciganehalli</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
               Hi, I&apos;m Tanushri Ciganehalli and I serve as the CTO of Flow Forward Initiative. I manage our website and help the team use technology to share our mission and connect with the community. 
@@ -165,17 +165,17 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl pb-15">
             <div className="relative h-80 w-80 overflow-hidden border-3 border-salmon">
               <Image
-                src="/images/placeholder.png" // Replace with your image path
+                src="/images/aditi-pic.jpg" // Replace with your image path
                 alt="Door shaped image"
-                width={400}
-                height={500}
+                width={512}
+                height={512}
                 className="w-full h-full object-fit"
                 priority
               />
             </div>
 
             <div className=''>
-              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Chief Outreach Officer</p>
+              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Outreach Officer</p>
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Aditi Bambhani</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
               Hi, My name is Aditi Bhambhani, I&apos;m currently at Amador Valley High. I love to swim, read, walk, listen to music, and color guard!
@@ -199,7 +199,7 @@ export default function AboutPage() {
             </div>
 
             <div className=''>
-              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Chief Administration and Creative Officer</p>
+              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Administration and Creative Officer</p>
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Aahana Lohia</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
               I joined Flow Forward because I wanted to help address the stigma and lack of access around menstruation in a way that blends both advocacy and creativity. 
@@ -224,10 +224,16 @@ export default function AboutPage() {
             </div>
 
             <div className=''>
-              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Chief Social Media Officer</p>
+              <p className="text-5xl font-bold tracking-wider pt-10 pb-8 leading-relaxed">Social Media Officer</p>
               <p className="text-3xl font-bold tracking-wider pb-4 leading-relaxed">Anam Hanif</p>
               <p className="text-xl font-light tracking-wider leading-relaxed">
-              
+              I joined Flow Forward because I wanted to be part of a project that makes a real difference for people who often get overlooked. The mission to improve menstrual accessibility and create community-based support really inspired me to get involved.
+
+In Flow Forward, I manage our social media presence and help lead marketing efforts. My focus is on building awareness through creative campaigns and engaging content.
+
+In my free time I like reading, especially mystery and true crime novels.
+
+My hope is for Flow Forward to reach more communities and address menstrual equity by both distributing kits and raising awareness about period poverty.
               </p>
             </div>
           </div>

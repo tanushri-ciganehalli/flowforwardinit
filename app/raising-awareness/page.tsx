@@ -113,7 +113,7 @@ export default function AwarenessPage() {
                           <div className="w-full h-full ">
                           <Image
                               src="/images/comic2.jpg" // Replace with your image path
-                              alt="Get Involved"
+                              alt="Comic 2"
                               width={607}
                               height={939}
                               className="w-full h-full object-fill rounded-2xl border-salmon border-2 bg-white p-2"

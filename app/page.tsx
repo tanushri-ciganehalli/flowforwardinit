@@ -9,7 +9,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/home_bg.png"
+            src="/images/main_img_upscale.jpg"
             alt="Illustrated background with diverse women and menstrual products"
             fill
             className="object-cover"
